@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@300&family=Fira+Code&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  height: 1150px;
+}
+
+.title {
+  font-family: "Arima", cursive;
+  margin: 20px;
+}
+
+.button {
+  border-style: none;
+  border: #572ee5 solid 1px;
+  border-radius: 25px;
+  color: #572ee5;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: white;
+  margin: 10px;
+  margin-top: 10px;
+  padding: 15px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #572ee5;
+  color: white;
+}
+
+.subtitle {
+  font-family: "Arima", cursive;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.cell {
+  display: inline-block;
+  border-radius: 50%;
+  color: #572ee5;
+  text-align: center;
+  padding: 2px;
+  width: 10px;
+  height: 10px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background-color: palevioletred;
+}
+
+.on {
+  background-color: #572ee5;
+  color: white;
+}
+
+.off {
+  background-color: lightgray;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: center;
+  align-items: center;
+  width: 300px;
+  margin-top: 20px;
+}
+
+/* DARK */
+
+.App.dark {
+  background-color: rgb(44, 44, 44);
+}
+
+.dark .title {
+  color: white;
+}
+
+.dark .button {
+  border: white solid 1px;
+  color: white;
+  background-color: rgb(44, 44, 44);
+}
+
+.dark .button:hover {
+  background-color: rgb(121, 121, 121);
+}
+
+.dark .subtitle {
+  color: white;
+}
+
+.dark .cell {
+  border: black;
+}
+
+.dark .cell:hover {
+  background-color: white;
+}
+
+.dark .on {
+  background-color: rgb(65, 226, 145);
+  /* background-color: rgb(226, 223, 65); */
+}
+
+.dark .off {
+  background-color: rgba(26, 25, 25, 0.679);
+}
+
+/* LUMINESCENT  */
+
+.App.luminescent {
+  background-color: black;
+}
+
+.luminescent .title {
+  color: rgb(95, 245, 182);
+}
+
+.luminescent .button {
+  border: black;
+  color: rgb(95, 245, 182);
+  background-color: rgb(44, 44, 44);
+}
+
+.luminescent .button:hover {
+  background-color: rgb(1, 56, 33);
+  color: rgb(47, 247, 7);
+}
+
+.luminescent .subtitle {
+  color: rgb(95, 245, 182);
+}
+
+.luminescent .cell {
+  border: black;
+}
+
+.luminescent .cell:hover {
+  background-color: rgb(95, 245, 182);
+}
+
+.luminescent .on {
+  background-color: rgb(47, 247, 7);
+}
+
+.luminescent .off {
+  background-color: rgb(1, 56, 33);
+}
+
+/* SQUARE */
+
+.square {
+  border-radius: 0%;
+  padding: 2px;
+  width: 12px;
+  height: 12px;
+  margin: 1px;
+}
+
+.little {
+  border-radius: 0%;
+  padding: 1px;
+  width: 5px;
+  height: 5px;
+  margin: 1px;
+}
